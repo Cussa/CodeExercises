@@ -10,6 +10,8 @@ namespace CodeExercises.LeetCode.Chanllenges.ThirtyDayApril2020
         private int numberMin = int.MaxValue;
 
         /** initialize your data structure here. */
+        // Have to keep the same configuration from LeetCode
+        // ReSharper disable once EmptyConstructor
         public MinStack()
         {
         }

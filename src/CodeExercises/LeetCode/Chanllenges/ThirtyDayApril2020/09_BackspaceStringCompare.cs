@@ -3,6 +3,8 @@
     // 2020-04-09: https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/529/week-2/3291/
     public class BackspaceStringCompare
     {
+        // ReSharper disable once InconsistentNaming
+        // Have to keep the same parameters name from LeetCode
         public bool Resolve(string S, string T)
         {
             return RemoveBackspaces(S) == RemoveBackspaces(T);

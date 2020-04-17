@@ -27,8 +27,15 @@ namespace CodeExercises.LeetCode.Chanllenges.ThirtyDayApril2020
 
         public class TreeNode
         {
+            // Have to keep same configuration from LeetCode
+
+            // ReSharper disable once InconsistentNaming
+            // ReSharper disable once NotAccessedField.Global
+            // ReSharper disable once MemberCanBePrivate.Global
             public int val;
+            // ReSharper disable once InconsistentNaming
             public TreeNode left;
+            // ReSharper disable once InconsistentNaming
             public TreeNode right;
             public TreeNode(int x) { val = x; }
         }

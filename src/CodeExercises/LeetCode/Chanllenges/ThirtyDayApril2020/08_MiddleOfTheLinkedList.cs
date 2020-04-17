@@ -29,7 +29,13 @@ namespace CodeExercises.LeetCode.Chanllenges.ThirtyDayApril2020
 
         public class ListNode
         {
+            // Have to keep the same configuration from LeetCode
+
+            // ReSharper disable once InconsistentNaming
+            // ReSharper disable once NotAccessedField.Global
+            // ReSharper disable once MemberCanBePrivate.Global
             public int val;
+            // ReSharper disable once InconsistentNaming
             public ListNode next;
             public ListNode(int x) { val = x; }
         }

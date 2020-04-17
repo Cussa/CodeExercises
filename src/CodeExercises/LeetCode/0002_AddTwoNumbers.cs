@@ -59,14 +59,19 @@ namespace CodeExercises.LeetCode
 
         public class ListNode
         {
+            // Have to keep the same configuration from LeetCode
+
+            // ReSharper disable once InconsistentNaming
+            // ReSharper disable once FieldCanBeMadeReadOnly.Global
             public int val;
+            // ReSharper disable once InconsistentNaming
             public ListNode next;
             public ListNode(int x) { val = x; }
 
             public static ListNode Create(int[] values)
             {
                 var node1 = new ListNode(values[0]);
-                for (int i = 1; i < values.Length; i++)
+                for (var i = 1; i < values.Length; i++)
                 {
                     var newNode1 = new ListNode(values[i])
                     {
