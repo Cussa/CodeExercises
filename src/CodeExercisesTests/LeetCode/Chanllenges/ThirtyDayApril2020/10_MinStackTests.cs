@@ -1,5 +1,4 @@
 ﻿using CodeExercises.LeetCode.Chanllenges.ThirtyDayApril2020;
-using Microsoft.Win32.SafeHandles;
 using NUnit.Framework;
 
 namespace CodeExercisesTests.LeetCode.Chanllenges.ThirtyDayApril2020

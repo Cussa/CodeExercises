@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace CodeExercises.LeetCode.Chanllenges.ThirtyDayApril2020
+﻿namespace CodeExercises.LeetCode.Chanllenges.ThirtyDayApril2020
 {
     // 2020-04-09: https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/529/week-2/3291/
     public class BackspaceStringCompare
