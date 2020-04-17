@@ -6,8 +6,8 @@ namespace CodeExercises.LeetCode.Chanllenges.ThirtyDayApril2020
     // 2020-04-10: https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/529/week-2/3292/
     public class MinStack
     {
-        private Stack<int> stack = new Stack<int>();
-        private int numberMin = int.MaxValue;
+        private readonly Stack<int> _stack = new Stack<int>();
+        private int _numberMin = int.MaxValue;
 
         /** initialize your data structure here. */
         // Have to keep the same configuration from LeetCode
@@ -18,25 +18,25 @@ namespace CodeExercises.LeetCode.Chanllenges.ThirtyDayApril2020
 
         public void Push(int x)
         {
-            stack.Push(x);
-            if (x < numberMin)
-                numberMin = x;
+            _stack.Push(x);
+            if (x < _numberMin)
+                _numberMin = x;
         }
 
         public void Pop()
         {
-            stack.Pop();
-            numberMin = stack.Count > 0 ? stack.Min() : int.MaxValue;
+            _stack.Pop();
+            _numberMin = _stack.Count > 0 ? _stack.Min() : int.MaxValue;
         }
 
         public int Top()
         {
-            return stack.Peek();
+            return _stack.Peek();
         }
 
         public int GetMin()
         {
-            return numberMin;
+            return _numberMin;
         }
     }
 }

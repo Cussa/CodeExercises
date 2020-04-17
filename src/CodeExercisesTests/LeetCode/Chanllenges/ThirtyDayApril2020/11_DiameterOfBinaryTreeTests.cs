@@ -5,7 +5,7 @@ namespace CodeExercisesTests.LeetCode.Chanllenges.ThirtyDayApril2020
 {
     public class _11_DiameterOfBinaryTreeTests
     {
-        static readonly object[] sourceObjects =
+        static readonly object[] SourceObjects =
         {
             new object[]
             {
@@ -85,7 +85,7 @@ namespace CodeExercisesTests.LeetCode.Chanllenges.ThirtyDayApril2020
         };
 
         [Test]
-        [TestCaseSource(nameof(sourceObjects))]
+        [TestCaseSource(nameof(SourceObjects))]
         public void TestSolution(DiameterOfBinaryTree.TreeNode input1, int expectedResult)
         {
             var result = new DiameterOfBinaryTree().Resolve(input1);

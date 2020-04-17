@@ -5,7 +5,7 @@ namespace CodeExercisesTests.LeetCode.Chanllenges.ThirtyDayApril2020
 {
     public class _14_PerformStringShiftsTests
     {
-        private static readonly object[] sourceObjects =
+        private static readonly object[] SourceObjects =
         {
             new object[]
             {
@@ -28,7 +28,7 @@ namespace CodeExercisesTests.LeetCode.Chanllenges.ThirtyDayApril2020
         };
 
         [Test]
-        [TestCaseSource(nameof(sourceObjects))]
+        [TestCaseSource(nameof(SourceObjects))]
         public void TestSolution(string input1, int[][] input2, string expectedResult)
         {
             var result = new PerformStringShifts().Resolve(input1, input2);

@@ -4,12 +4,12 @@ namespace CodeExercises.LeetCode.Chanllenges.ThirtyDayApril2020
 {
     public class DiameterOfBinaryTree
     {
-        private int depth = 0;
+        private int _depth;
 
         public int Resolve(TreeNode root)
         {
             GetDepth(root);
-            return depth;
+            return _depth;
         }
 
         public int GetDepth(TreeNode node)
@@ -20,7 +20,7 @@ namespace CodeExercises.LeetCode.Chanllenges.ThirtyDayApril2020
             var edgeLeft = GetDepth(node.left);
             var edgeRight = GetDepth(node.right);
 
-            depth = Math.Max(depth, edgeLeft + edgeRight);
+            _depth = Math.Max(_depth, edgeLeft + edgeRight);
 
             return Math.Max(edgeLeft, edgeRight) + 1;
         }

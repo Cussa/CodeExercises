@@ -7,7 +7,7 @@ namespace CodeExercisesTests.LeetCode.Chanllenges.ThirtyDayApril2020
 {
     public class _06_GroupAnagramsTests
     {
-        static readonly object[] sourceObjects = 
+        static readonly object[] SourceObjects = 
         {
             new object[]
             {
@@ -22,7 +22,7 @@ namespace CodeExercisesTests.LeetCode.Chanllenges.ThirtyDayApril2020
         };
 
         [Test]
-        [TestCaseSource(nameof(sourceObjects))]
+        [TestCaseSource(nameof(SourceObjects))]
         public void TestSolution(string[] input1, IList<IList<string>> expectedResult)
         {
             var result = new GroupAnagrams().Resolve(input1);
